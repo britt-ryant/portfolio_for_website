@@ -11,7 +11,6 @@ class Projects extends Component {
       apiData: null
     }
   }
-
   componentDidMount(){
     console.log(`rendering data for projects`);
     axios.get('/api/projects')

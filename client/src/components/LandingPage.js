@@ -4,7 +4,9 @@ import React, { Component } from 'react';
 class LandingPage extends Component {
   render(){
     return(
-      <h1>I am the Landing page</h1>
+      <div className="landing_page">
+        <h1>Ryan Britt</h1>
+      </div>
     )
   }
 }

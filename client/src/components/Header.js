@@ -18,10 +18,9 @@ class Header extends Component {
   render(){
     return(
       <div className="header">
-        {/* {this.state.landingPage ? <p>Ryan Britt</p> : <p>I worked</p>} */}
         <nav className='main navbar'>
           <Link to="/">Home</Link>
-          <Link to="/contact" onClick={(e) => this.handleClick(e)}>Contact</Link>
+          <Link to="/contact">Contact</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/about">About</Link>
         </nav>

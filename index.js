@@ -3,6 +3,7 @@ const logger = require('morgan');
 const path = require('path')
 const methodOverride = require('method-override');
 const bodyParser = require('body-parser');
+const mainRouter = require('./routes/mainRouter');
 
 const app = express();
 
@@ -13,10 +14,11 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 const PORT = process.env.PORT || 3001;
 
+app.use('/api/projects', mainRouter)
+
 app.get('/', (req, res) => {
   res.send('Homepage for localhost: 3001')
 })
-
 
 
 

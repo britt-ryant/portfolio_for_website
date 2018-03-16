@@ -1,18 +1,31 @@
-.header {
-  border: 2px dashed black;
-  margin: 0 auto;
-  text-align: center;
+
+.head_spacer{
+  line-height: 5vh;
 }
-.header a {
-  padding: 20px;
+nav{
+  line-height: 5vh;
+  border: 2px solid black;
+  height: 100vh;
+  width: 10vw;
+  margin: auto;
+  padding: 40vh 0;
+}
+input{
 }
 .footer {
   border: 2px dashed black;
+  position: fixed;
+  bottom: 0;
   margin: 0 auto;
   text-align: center;
+  width: 100vw;
+  height: 5vh;
 }
 .footer a {
   padding: 20px;
+}
+.landing_page{
+
 }
 /* .landing_page {
   border: 2px solid black;
@@ -23,9 +36,12 @@ img{
   height: 20vh;
 }
 .main_div{
+  text-align: center;
   border: 2px solid black;
   height: 100vh;
 }
 nav{
+  justify-content: center;
+  margin: auto;
   position: fixed;
 }

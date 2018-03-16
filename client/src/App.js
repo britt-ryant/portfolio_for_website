@@ -17,29 +17,24 @@ import scrollToComponent from 'react-scroll-to-component';
 class App extends Component {
   constructor(props){
     super(props);
-    this.handleScroll = this.handleScroll.bind(this)
   }
-  handleScroll(section){
-    scrollToComponent(section, { offset: 0, align: 'top', duration: 1500})
+  componentDidMount(){
+    scrollToComponent(this.LandingPage, {offset: 0, align: 'top', duration: 500})
   }
   render() {
     return (
       <div className="App">
         <nav>
-          <button className="Projects" onClick={() => scrollToComponent(this.Projects, { offset: 0, align: 'top', duration: 1500})}>Projects</button>
-          <button onClick={() => scrollToComponent(this.ContactMe, { offset: 0, align: 'top', duration: 1500})}> Contact Me</button>
-
+          <input type="submit" className='nav_botton' onClick={() => scrollToComponent(this.LandingPage, { offset: 0, align: 'top', duration: 1500})} value="Home" />
+          <input type="submit" className='nav_botton' onClick={() => scrollToComponent(this.AboutMe, { offset: 0, align: 'top', duration: 1500})} value="About" />
+          <input type="submit" className="nav_botton" onClick={() => scrollToComponent(this.Projects, { offset: 0, align: 'top', duration: 1500})} value="Projects" />
+          <input type="submit" className="nav_botton" onClick={() => scrollToComponent(this.ContactMe, { offset: 0, align: 'top', duration: 1500})} value="Contact Me" />
         </nav>
-
           <div>
-            <LandingPage />
-            <section className="ContactMe" ref={(section) => {this.ContactMe = section; }}><ContactMe /></section>
+            <section className="LandingPage" ref={(section) => {this.LandingPage = section; }}><LandingPage /></section>
+            <section className="AboutMe" ref={(section) => {this.AboutMe = section; }}><AboutMe /></section>
             <section className="Projects" ref={(section) => { this.Projects = section; }}><Projects /></section>
-            <AboutMe />
-                  {/* <Route exact path='/' component={LandingPage} /> */}
-                  {/* <Route exact path='/contact' component={ContactMe} /> */}
-                  {/* <Route exact path='/projects' component={Projects} /> */}
-                  {/* <Route exact path='/about' component={AboutMe} /> */}
+            <section className="ContactMe" ref={(section) => {this.ContactMe = section; }}><ContactMe /></section>
             <Footer />
           </div>
         {/* </Router> */}

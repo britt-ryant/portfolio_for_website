@@ -24,16 +24,21 @@ class Projects extends Component {
     })
   }
   renderProjects(){
-    return this.state.apiData.map((project, id) => {
-      return <OneProject projectData={project} key={id} />
+  const allProjects = this.state.apiData.map((project, id) => {
+          return <OneProject projectData={project} key={id} />
     })
+    return(
+      <div className="main_div">
+        {allProjects}
+      </div>
+    )
   }
   render(){
     if(this.state.apiDataReceived){
       return this.renderProjects()
     } else{
       return(
-        <div>
+        <div className="main_div">
           <h1>Projects</h1>
           <p>loading</p>
         </div>

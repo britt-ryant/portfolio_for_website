@@ -1,5 +1,5 @@
 .header {
-  border: 2px solid black;
+  border: 2px dashed black;
   margin: 0 auto;
   text-align: center;
 }
@@ -7,15 +7,25 @@
   padding: 20px;
 }
 .footer {
-  border: 2px solid black;
+  border: 2px dashed black;
   margin: 0 auto;
   text-align: center;
 }
 .footer a {
   padding: 20px;
 }
-.landing_page {
+/* .landing_page {
   border: 2px solid black;
   margin: 0 auto;
   text-align: center;
+} */
+img{
+  height: 20vh;
+}
+.main_div{
+  border: 2px solid black;
+  height: 100vh;
+}
+nav{
+  position: fixed;
 }

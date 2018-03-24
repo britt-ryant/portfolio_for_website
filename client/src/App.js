@@ -25,10 +25,13 @@ class App extends Component {
     return (
       <div className="App">
         <nav>
-          <input type="submit" className='nav_botton' onClick={() => scrollToComponent(this.LandingPage, { offset: 0, align: 'top', duration: 1500})} value="Home" />
-          <input type="submit" className='nav_botton' onClick={() => scrollToComponent(this.AboutMe, { offset: 0, align: 'top', duration: 1500})} value="About" />
-          <input type="submit" className="nav_botton" onClick={() => scrollToComponent(this.Projects, { offset: 0, align: 'top', duration: 1500})} value="Projects" />
-          <input type="submit" className="nav_botton" onClick={() => scrollToComponent(this.ContactMe, { offset: 0, align: 'top', duration: 1500})} value="Contact Me" />
+          <ul>
+
+            <li><input type="submit" className='home' onClick={() => scrollToComponent(this.LandingPage, { offset: 0, align: 'top', duration: 1500})} value="Home" /></li>
+            <li><input type="submit" className='about' onClick={() => scrollToComponent(this.AboutMe, { offset: 0, align: 'top', duration: 1500})} value="About" /></li>
+            <li><input type="submit" className="projects" onClick={() => scrollToComponent(this.Projects, { offset: 0, align: 'top', duration: 1500})} value="Projects" /></li>
+            <li><input type="submit" className="contact" onClick={() => scrollToComponent(this.ContactMe, { offset: 0, align: 'top', duration: 1500})} value="Contact Me" /></li>
+          </ul>
         </nav>
           <div>
             <section className="LandingPage" ref={(section) => {this.LandingPage = section; }}><LandingPage /></section>

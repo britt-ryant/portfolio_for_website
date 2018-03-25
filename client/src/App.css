@@ -39,7 +39,7 @@ nav{
 
 }
 .content{
-  border: 2px solid white;
+  /* border: 2px solid white; */
   width: 60vw;
   margin: 20vh auto;
 
@@ -63,7 +63,7 @@ button:focus{
 }
 .input_box{
   position: fixed;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   background-color: inherit;
   opacity: 0;
   top: 0;
@@ -151,7 +151,7 @@ button:focus{
 
 } */
 .footer {
-  border: 2px dashed white;
+  /* border: 2px dashed white; */
   position: fixed;
   bottom: 0;
   margin: 0 auto;
@@ -184,7 +184,7 @@ img{
 }
 .main_div{
   text-align: center;
-  border: 2px solid white;
+  border: 2px solid #1c1c1c;
   height: 100vh;
 }
 /* nav{

@@ -6,28 +6,31 @@
 body{
   color: white;
   background-color: #1c1c1c;
+  z-index: -1;
+  font-family: 'IBM Plex Mono', monospace;
+
 }
 
 ul {
   text-decoration: none;
   list-style-type: none;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   margin: 20vh auto;
   padding: 0
 }
 li {
-  border: 2px solid white;
+  /* border: 2px solid white; */
   margin: 5vh auto;
   position: relative;
   transition: 0.3s;
-  left: -8vw;
+  left: -7vw;
 }
 li:Hover{
   left: 0;
 }
 nav{
   line-height: 5vh;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   height: 100vh;
   width: 10vw;
   margin: auto;
@@ -37,21 +40,83 @@ nav{
 }
 .content{
   border: 2px solid white;
-  width: 50vw;
+  width: 60vw;
   margin: 20vh auto;
 
 }
-.pwd{
+.max{
+  max-width: 1500px;
+  margin: 20vh auto;
+}
+button{
+  background-color: white;
+  border-radius: 10px;
+  opacity: .2;
+  width: 9.5vw;
+  height: 6vh;
+  font-size: 30px;
+  text-align: left;
+}
+button:focus{
+  border: none;
+  outline: none;
+}
+.input_box{
+  position: fixed;
   border: 2px solid white;
+  background-color: inherit;
+  opacity: 0;
+  top: 0;
+  width: 35vw;
+  height: 10vh;
+
+}
+.content_large{
+  position: relative;
+  /* top: -20vh; */
+  /* border: 2px solid white; */
+  height: 20vh;
+  width: 70vw;
+  margin: 20vh auto;
+}
+
+.project{
+  /* border: 2px solid white; */
+  width: 20vw;
+  height: 30vh;
+  margin: auto 5vw;
+}
+.row{
+  align: center;
+}
+.header{
+  position: relative;
+  top: 10vh;
+  width: 70vw;
+  margin: auto;
+  /* border: 2px solid white; */
+  font-size: 90px;
+  padding: 0
+}
+.pwd{
+  /* border: 2px solid white; */
+  color: #b29600;
 }
 .terminal{
   font-size: 30px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   text-align: left;
-  padding: 0 0 0 5vw;
+  position: fixed;
+  padding: 0 10px 0 1vw;
+}
+.error{
+  top: 8vh;
 }
 .branch{
   color: #9818c5
+}
+.dark{
+  color: #4b4b4b
 }
 /* .home {
   position: relative;
@@ -99,10 +164,14 @@ nav{
 }
 
 h1 {
-  font-size: 100px
+  font-size: 150px
 }
 p {
-  font-size: 20px;
+  font-size: 35px;
+}
+.side-button{
+  /* width: 9.5vw; */
+  font-size: ;
 }
 
 /* .landing_page {
@@ -111,7 +180,7 @@ p {
   text-align: center;
 } */
 img{
-  height: 20vh;
+  height: 15vh;
 }
 .main_div{
   text-align: center;

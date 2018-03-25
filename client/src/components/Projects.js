@@ -29,22 +29,36 @@ class Projects extends Component {
     })
     return(
       <div className="main_div">
-        {allProjects}
+        <div className="header">
+        <h3>Projects</h3>
       </div>
+      <table className="content_large">
+        <tbody>
+            <tr className="row">
+                {allProjects}
+              </tr>
+            </tbody>
+      </table>
+    </div>
     )
   }
   render(){
-    if(this.state.apiDataReceived){
-      return this.renderProjects()
-    } else{
-      return(
-        <div className="main_div">
-          <h1>Projects</h1>
-          <p>loading</p>
-        </div>
-      )
-
-    }
+    // if(this.state.apiDataReceived){
+    //   return this.renderProjects()
+    // } else{
+    //   return(
+    //     <div className="main_div">
+    //       <h1>Projects</h1>
+    //       <p>loading</p>
+    //     </div>
+    //   )
+    //
+    // }
+    return(
+      <div className="main_div">
+        {this.state.apiDataReceived ? this.renderProjects() : <div className="content">Opps, this is awkward! Seems that there has been an error with the server</div>}
+      </div>
+    )
   }
 }
 

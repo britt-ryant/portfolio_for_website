@@ -5,10 +5,7 @@ class LandingPage extends Component {
   render(){
     return(
       <div className="main_div">
-        <div className='pwd'>
-          <p className='terminal'>~ / code / portfolio / ryanbritt [<span className='branch'>master</span>]</p>
-        </div>
-        <div className='content'>
+        <div className='content dark'>
         <h1>Ryan Britt</h1>
         <p>Full stack web developer and experienced architecture and engineering graduate pursuing challenges where I can leverage a unique combination of technical, organizational, interpersonal skills, and creativity.  </p>
 

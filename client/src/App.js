@@ -3,7 +3,8 @@ import './App.css';
 
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Redirect
 } from 'react-router-dom'
 
 import Header from './components/Header';
@@ -20,9 +21,11 @@ class App extends Component {
     super(props);
     this.state = {
       terminalNavbar: false,
-      treeCommand: false
+      treeCommand: false,
+      fireRedirect: false
     }
     this.scrollFunction = this.scrollFunction.bind(this)
+    this.gitHubClick = this.gitHubClick.bind(this)
   }
   componentDidMount(){
     scrollToComponent(this.LandingPage, {offset: 0, align: 'top', duration: 500})
@@ -56,6 +59,12 @@ class App extends Component {
         scrollToComponent(this.LandingPage, { offset: 0, align: 'top', duration: 1500})
     }
   }
+  gitHubClick(){
+    this.setState({
+      fireRedirect: true
+    })
+    window.location.assign('https://github.com/britt-ryant')
+  }
   render() {
     return (
       <div className="App">
@@ -68,14 +77,17 @@ class App extends Component {
           </ul>
         </nav>
           <div>
-            <TerminalCommandLineTwo scrollTo={this.scrollFunction} terminalNavbar={this.state.terminalNavbar}/>
+            <TerminalCommandLineTwo scrollTo={this.scrollFunction} terminalNavbar={this.state.terminalNavbar} gitHubClick={this.gitHubClick}/>
             <section className="LandingPage" ref={(section) => {this.LandingPage = section; }}><LandingPage /></section>
             <section className="AboutMe" ref={(section) => {this.AboutMe = section; }}><AboutMe /></section>
             <section className="Projects" ref={(section) => { this.Projects = section; }}><Projects /></section>
             <section className="ContactMe" ref={(section) => {this.ContactMe = section; }}><ContactMe /></section>
             <Footer />
           </div>
-        {/* </Router> */}
+        {/* <Router>
+          {this.state.fireRedirect ? <Redirect to="https://github.com/britt-ryant"/> : ''}
+
+        </Router> */}
       </div>
     );
   }

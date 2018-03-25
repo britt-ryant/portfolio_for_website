@@ -110,6 +110,10 @@ class TerminalCommandLineTwo extends Component {
         // terminalNavbar: false,
         currentCommand: ""
       }, () => this.props.scrollTo('LandingPage'))
+    }else if(this.state.currentCommand === "git push origin master" && this.state.backupCount === 0) {
+      this.setState({
+        currentCommand: ""
+      }, () => this.props.gitHubClick())
     } else {
       console.log(`ERROR`);
       this.setState({

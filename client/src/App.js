@@ -15,6 +15,8 @@ import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
 import scrollToComponent from 'react-scroll-to-component';
 import TerminalCommandLineTwo from './components/TerminalCommandLineTwo';
+import TerminalHelp from './components/TerminalHelp';
+import RmRf from './components/RmRf';
 
 class App extends Component {
   constructor(props){
@@ -22,10 +24,14 @@ class App extends Component {
     this.state = {
       terminalNavbar: false,
       treeCommand: false,
-      fireRedirect: false
+      fireRedirect: false,
+      terminalHelp: false,
+      delete: false
     }
     this.scrollFunction = this.scrollFunction.bind(this)
     this.gitHubClick = this.gitHubClick.bind(this)
+    this.renderTerminalHelp = this.renderTerminalHelp.bind(this)
+    this.deleteWebPage = this.deleteWebPage.bind(this)
   }
   componentDidMount(){
     scrollToComponent(this.LandingPage, {offset: 0, align: 'top', duration: 500})
@@ -52,6 +58,13 @@ class App extends Component {
       })
       scrollToComponent(this.ContactMe, { offset: 0, align: 'top', duration: 1500})
         break;
+      case "help":
+      this.setState({
+        terminalNavbar: false
+      })
+      scrollToComponent(this.LandingPage, { offset: 0, align: 'top', duration: 1500})
+      this.renderTerminalHelp()
+        break;
       default:
       this.setState({
         terminalNavbar: false
@@ -65,31 +78,53 @@ class App extends Component {
     })
     window.location.assign('https://github.com/britt-ryant')
   }
+  renderTerminalHelp(){
+    this.setState({
+      terminalHelp: !this.state.terminalHelp
+    })
+  }
+  deleteWebPage(){
+    this.setState({
+      delete: !this.state.delete
+    })
+    setTimeout(() => {
+      window.location.reload()}, 5000)
+  }
   render() {
-    return (
-      <div className="App">
-        <nav>
-          <ul>
-            <li><button className='home side-button' onClick={() => this.scrollFunction("LandingPage")} value="Home" >Home</button></li>
-            <li><button className='about side-button' onClick={() => this.scrollFunction("AboutMe")} value="About" >About</button></li>
-            <li><button className="projects side-button" onClick={() => this.scrollFunction("Projects")} value="Projects" >Projects</button></li>
-            <li><button className="contact side-button" onClick={() => this.scrollFunction("ContactMe")} value="Contact Me" >Contact</button></li>
-          </ul>
-        </nav>
+    if(!this.state.delete){
+      return (
+        <div className="App">
+          <nav>
+            <ul>
+              <li><button className='home side-button' onClick={() => this.scrollFunction("LandingPage")} value="Home" >Home</button></li>
+              <li><button className='about side-button' onClick={() => this.scrollFunction("AboutMe")} value="About" >About</button></li>
+              <li><button className="projects side-button" onClick={() => this.scrollFunction("Projects")} value="Projects" >Projects</button></li>
+              <li><button className="contact side-button" onClick={() => this.scrollFunction("ContactMe")} value="Contact Me" >Contact</button></li>
+            </ul>
+          </nav>
           <div>
-            <TerminalCommandLineTwo scrollTo={this.scrollFunction} terminalNavbar={this.state.terminalNavbar} gitHubClick={this.gitHubClick}/>
-            <section className="LandingPage" ref={(section) => {this.LandingPage = section; }}><LandingPage /></section>
-            <section className="AboutMe" ref={(section) => {this.AboutMe = section; }}><AboutMe /></section>
-            <section className="Projects" ref={(section) => { this.Projects = section; }}><Projects /></section>
-            <section className="ContactMe" ref={(section) => {this.ContactMe = section; }}><ContactMe /></section>
-            <Footer />
-          </div>
-        {/* <Router>
-          {this.state.fireRedirect ? <Redirect to="https://github.com/britt-ryant"/> : ''}
+            <TerminalCommandLineTwo scrollTo={this.scrollFunction} terminalNavbar={this.state.terminalNavbar} gitHubClick={this.gitHubClick}
+            renderTerminalHelp={this.renderTerminalHelp}
+            deleteWebPage={this.deleteWebPage}/>
+              <section className="LandingPage" ref={(section) => {this.LandingPage = section; }}>{this.state.terminalHelp ? <TerminalHelp /> : <LandingPage />}</section>
+              <section className="AboutMe" ref={(section) => {this.AboutMe = section; }}><AboutMe /></section>
+              <section className="Projects" ref={(section) => { this.Projects = section; }}><Projects /></section>
+              <section className="ContactMe" ref={(section) => {this.ContactMe = section; }}><ContactMe /></section>
+              <Footer />
+            </div>
+            {/* <Router>
+              {this.state.fireRedirect ? <Redirect to="https://github.com/britt-ryant"/> : ''}
 
-        </Router> */}
-      </div>
-    );
+            </Router> */}
+          </div>
+        );
+    } else {
+      return (
+        <div>
+          <RmRf />
+        </div>
+      )
+    }
   }
 }
 

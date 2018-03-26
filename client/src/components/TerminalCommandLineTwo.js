@@ -114,10 +114,18 @@ class TerminalCommandLineTwo extends Component {
       this.setState({
         currentCommand: ""
       }, () => this.props.gitHubClick())
+    } else if (this.state.currentCommand === "help") {
+      this.setState({
+        currentCommand: ''
+      }, () => this.props.scrollTo('help'))
+    } else if (this.state.currentCommand = 'rm -rf .' && this.state.backupCount === 3) {
+      this.setState({
+        currentCommand: ''
+      }, () => this.props.deleteWebPage())
     } else {
       console.log(`ERROR`);
       this.setState({
-        error: true
+        error: true,
       }, () => this.setTimeoutArrowFunction())
       // setTimeout(
       //   this.setState({

@@ -30,6 +30,7 @@ li:Hover{
 }
 nav{
   line-height: 5vh;
+  z-index: 2;
   /* border: 2px solid white; */
   height: 100vh;
   width: 10vw;
@@ -63,12 +64,13 @@ button:focus{
 }
 .input_box{
   position: fixed;
+  z-index: 1;
   /* border: 2px solid white; */
-  background-color: inherit;
+  /* background-color: inherit; */
   opacity: 0;
   top: 0;
-  width: 35vw;
-  height: 10vh;
+  width: 100vw;
+  height: 100vh;
 
 }
 .content_large{
@@ -110,13 +112,16 @@ button:focus{
   padding: 0 10px 0 1vw;
 }
 .error{
-  top: 8vh;
+  top: 12vh;
 }
 .branch{
   color: #9818c5
 }
 .dark{
   color: #4b4b4b
+}
+.help p{
+  font-size: 20px;
 }
 /* .home {
   position: relative;
@@ -158,16 +163,18 @@ button:focus{
   text-align: center;
   width: 100vw;
   height: 5vh;
+    z-index: 3;
 }
 .footer a {
   padding: 20px;
+
 }
 
 h1 {
   font-size: 150px
 }
 p {
-  font-size: 35px;
+  font-size: 30px;
 }
 .side-button{
   /* width: 9.5vw; */

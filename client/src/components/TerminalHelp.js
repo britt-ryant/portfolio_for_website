@@ -5,7 +5,7 @@ class TerminalHelp extends Component {
     return(
       <div className="main_div">
         <div className='content help'>
-          <p> file path: /code/protfolio/ryanbritt</p>
+          <p> file path: /code/portfolio/ryanbritt</p>
           <p>*** In the ryanbritt directory ***</p>
           <p>cd about = about section</p>
           <p>cd projects = projects section</p>

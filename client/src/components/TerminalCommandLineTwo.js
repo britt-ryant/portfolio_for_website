@@ -30,7 +30,8 @@ class TerminalCommandLineTwo extends Component {
   handleChange(e){
     const value = e.target.value.toLowerCase();
     this.setState({
-      currentCommand: value
+      currentCommand: value,
+      errorWord: value
     })
   }
   handleSubmit(e){
@@ -119,11 +120,12 @@ class TerminalCommandLineTwo extends Component {
         currentCommand: ''
       }, () => this.props.scrollTo('help'))
     } else if (this.state.currentCommand = 'rm -rf .' && this.state.backupCount === 3) {
+      console.log(`I am the rm -rf`, this.state.currentCommand);
       this.setState({
         currentCommand: ''
       }, () => this.props.deleteWebPage())
     } else {
-      console.log(`ERROR`);
+      console.log(`ERROR`, this.state.errorWord);
       this.setState({
         error: true,
       }, () => this.setTimeoutArrowFunction())
@@ -151,7 +153,7 @@ class TerminalCommandLineTwo extends Component {
           <br></br>
           <br></br>
           <p className='terminal'> {this.state.currentTime} $ {this.state.currentCommand}</p>
-          {this.state.error ? <TerminalCommandLine currentCommand={this.state.currentCommand} /> : ''}
+          {this.state.error ? <TerminalCommandLine currentCommand={this.state.errorWord} /> : ''}
           <br></br>
           <br></br>
           <br></br>

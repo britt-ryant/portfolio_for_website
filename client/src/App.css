@@ -8,6 +8,7 @@ body{
   background-color: #1c1c1c;
   z-index: -1;
   font-family: 'IBM Plex Mono', monospace;
+  min-width: 1600px;
 
 }
 
@@ -37,6 +38,7 @@ nav{
   margin: auto;
   position: fixed;
   display: inline-block;
+  min-width: 250px;
 
 }
 .content{
@@ -87,7 +89,17 @@ button:focus{
   width: 20vw;
   height: 30vh;
   margin: auto 5vw;
+  padding: 0 5px 0 5px;
 }
+.project h2{
+  font-size: 40px;
+}
+.project_header{
+/* border: 2px solid white; */
+width: 61vw;
+font-size: 60px;
+}
+
 .row{
   align: center;
 }
@@ -110,6 +122,17 @@ button:focus{
   text-align: left;
   position: fixed;
   padding: 0 10px 0 1vw;
+  min-width: 700px;
+}
+
+.help_menu_nav {
+  font-size: 22px;
+  position: fixed;
+  /* border: 2px solid white; */
+  right: 2vw;
+  top: 2vh;
+  width: 17vw;
+  color: #4b4b4b;
 }
 .error{
   top: 12vh;
@@ -160,15 +183,17 @@ button:focus{
   position: fixed;
   bottom: 0;
   margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, .2);
   text-align: center;
   width: 100vw;
   height: 5vh;
-    z-index: 3;
+  z-index: 3;
 }
 .footer a {
   padding: 20px;
-
 }
+
 
 h1 {
   font-size: 150px
@@ -179,6 +204,16 @@ p {
 .side-button{
   /* width: 9.5vw; */
   font-size: ;
+}
+
+.about_me, h2{
+  font-size: 70px;
+}
+.about_me, p{
+  font-size: 20px;
+}
+.about_pic{
+  height: 30vh;
 }
 
 /* .landing_page {
@@ -193,9 +228,39 @@ img{
   text-align: center;
   border: 2px solid #1c1c1c;
   height: 100vh;
+  min-width: 1600px;
 }
 /* nav{
   justify-content: center;
   margin: auto;
   position: fixed;
 } */
+
+.App{
+  border: 2px solid white;
+  min-width: 1600px;
+}
+
+.logo{
+  height: 50px;
+  margin: auto 30px;
+}
+.logo:Hover{
+  color: white;
+}
+.technologies{
+  margin: 25vh auto;
+  padding: 20px;
+  /* border: 2px solid white; */
+  width: 100vw;
+  height: 50vh;
+  background-color: rgba(255, 255, 255, .3)
+}
+.big-logo{
+  height: 150px;
+  padding: 50px;
+}
+ .special{
+  height: 200px;
+  padding: 0 50px 20px 50px;
+}

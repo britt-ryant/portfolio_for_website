@@ -100,15 +100,19 @@ class TerminalCommandLineTwo extends Component {
         // terminalNavbar: true,
         currentCommand: ""
       }, () => this.props.scrollTo('Projects'))
-    }else if (this.state.currentCommand === "cd contact" && this.state.backupCount === 0){
+    }else if (this.state.currentCommand === "cd tech" && this.state.backupCount === 0){
       this.setState({
         // terminalNavbar: true,
         currentCommand: ""
-      }, () => this.props.scrollTo(`ContactMe`))
+      }, () => this.props.scrollTo(`Technologies`))
     }else if(this.state.currentCommand === "cd .." && this.state.backupCount === 0 && this.state.terminalNavbar === true){
       console.log(`In it!!!`);
       this.setState({
         // terminalNavbar: false,
+        currentCommand: ""
+      }, () => this.props.scrollTo('LandingPage'))
+    }else if(this.state.currentCommand === "cd home" && this.state.backupCount === 0){
+      this.setState({
         currentCommand: ""
       }, () => this.props.scrollTo('LandingPage'))
     }else if(this.state.currentCommand === "git push origin master" && this.state.backupCount === 0) {
@@ -119,7 +123,7 @@ class TerminalCommandLineTwo extends Component {
       this.setState({
         currentCommand: ''
       }, () => this.props.scrollTo('help'))
-    } else if (this.state.currentCommand = 'rm -rf .' && this.state.backupCount === 3) {
+    } else if (this.state.currentCommand === 'rm -rf .' && this.state.backupCount === 3) {
       console.log(`I am the rm -rf`, this.state.currentCommand);
       this.setState({
         currentCommand: ''
@@ -128,6 +132,7 @@ class TerminalCommandLineTwo extends Component {
       console.log(`ERROR`, this.state.errorWord);
       this.setState({
         error: true,
+        currentCommand: ''
       }, () => this.setTimeoutArrowFunction())
       // setTimeout(
       //   this.setState({
@@ -149,6 +154,7 @@ class TerminalCommandLineTwo extends Component {
       return(
         <div className='pwd'>
           <p className='terminal'> ~ {this.state.pwdCode}{this.state.pwdPortfolio}{this.state.pwdRyanBritt}<span className="branch">{this.state.pwdBranch}</span></p>
+          <div className="help_menu_nav">click anywhere on the page and type help in command line to toggle the help menu</div>
           <br></br>
           <br></br>
           <br></br>

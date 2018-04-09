@@ -8,13 +8,12 @@ class TerminalHelp extends Component {
           <p> file path: /code/portfolio/ryanbritt</p>
           <p>*** In the ryanbritt directory ***</p>
           <p>cd about = about section</p>
+          <p>cd tech = technologies section</p>
           <p>cd projects = projects section</p>
-          <p>cd contact = contact section</p>
           <p>cd .. = back to landing page</p>
+          <p>cd home = back to landing page</p>
           <p>cd  = root dir</p>
           <p>git push origin master = ryan britt's github profile</p>
-          <p>**** CAUTION ****</p>
-          <p>rm -rf root dir will remove all information!</p>
           <p>*****************</p>
           <p>type help to toggle the help menu</p>
         </div>

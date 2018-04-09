@@ -30,7 +30,7 @@ class TerminalCommandLine extends Component {
   renderDirMessage(){
     return(
       <div className='pwd'>
-        <p className='terminal error'>- bash: {this.state.currentError} :no such directory</p>
+        <p className='terminal error'>- bash:  cd: {this.state.currentError} :no such file or directory</p>
       </div>
     )
   }

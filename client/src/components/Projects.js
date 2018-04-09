@@ -29,16 +29,18 @@ class Projects extends Component {
     })
     return(
       <div className="main_div">
-        <div className="header">
+        <div className="content_large">
+        <div className="project_header">
         <h3>Projects</h3>
       </div>
-      <table className="content_large">
+      <table className="content_projects">
         <tbody>
             <tr className="row">
                 {allProjects}
               </tr>
             </tbody>
       </table>
+    </div>
     </div>
     )
   }
@@ -56,7 +58,10 @@ class Projects extends Component {
     // }
     return(
       <div className="main_div">
-        {this.state.apiDataReceived ? this.renderProjects() : <div className="content">Opps, this is awkward! Seems that there has been an error with the server</div>}
+        <div className="projects_content">
+          {this.state.apiDataReceived ? this.renderProjects() : <div className="content">Opps, this is awkward! Seems that there has been an error with the server</div>}
+
+        </div>
       </div>
     )
   }

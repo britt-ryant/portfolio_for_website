@@ -10,7 +10,8 @@ import {
 import Header from './components/Header';
 import Footer from './components/Footer';
 import LandingPage from './components/LandingPage';
-import ContactMe from './components/ContactMe';
+// import ContactMe from './components/ContactMe';
+import Technologies from './components/Technologies'
 import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
 import scrollToComponent from 'react-scroll-to-component';
@@ -43,7 +44,6 @@ class App extends Component {
       this.setState({
         terminalNavbar: true
       })
-      console.log(`Is this working??`);
       scrollToComponent(this.AboutMe, { offset: 0, align: 'top', duration: 1500})
         break;
       case "Projects":
@@ -52,11 +52,11 @@ class App extends Component {
       })
       scrollToComponent(this.Projects, { offset: 0, align: 'top', duration: 1500})
         break;
-      case "ContactMe":
+      case "Technologies":
       this.setState({
         terminalNavbar: true
       })
-      scrollToComponent(this.ContactMe, { offset: 0, align: 'top', duration: 1500})
+      scrollToComponent(this.Technologies, { offset: 0, align: 'top', duration: 1500})
         break;
       case "help":
       this.setState({
@@ -96,10 +96,10 @@ class App extends Component {
         <div className="App">
           <nav>
             <ul>
-              <li><button className='home side-button' onClick={() => this.scrollFunction("LandingPage")} value="Home" >Home</button></li>
-              <li><button className='about side-button' onClick={() => this.scrollFunction("AboutMe")} value="About" >About</button></li>
-              <li><button className="projects side-button" onClick={() => this.scrollFunction("Projects")} value="Projects" >Projects</button></li>
-              <li><button className="contact side-button" onClick={() => this.scrollFunction("ContactMe")} value="Contact Me" >Contact</button></li>
+              <li><button className='home side-button' onClick={() => this.scrollFunction("LandingPage")} value="Home" >home</button></li>
+              <li><button className='about side-button' onClick={() => this.scrollFunction("AboutMe")} value="About" >about</button></li>
+              <li><button className="projects side-button" onClick={() => this.scrollFunction("Projects")} value="Projects" >projects</button></li>
+              <li><button className="contact side-button" onClick={() => this.scrollFunction("Technologies")} value="Contact Me" >contact</button></li>
             </ul>
           </nav>
           <div>
@@ -108,8 +108,8 @@ class App extends Component {
             deleteWebPage={this.deleteWebPage}/>
               <section className="LandingPage" ref={(section) => {this.LandingPage = section; }}>{this.state.terminalHelp ? <TerminalHelp /> : <LandingPage />}</section>
               <section className="AboutMe" ref={(section) => {this.AboutMe = section; }}><AboutMe /></section>
+              <section className="Technologies" ref={(section) => {this.Technologies = section; }}><Technologies /></section>
               <section className="Projects" ref={(section) => { this.Projects = section; }}><Projects /></section>
-              <section className="ContactMe" ref={(section) => {this.ContactMe = section; }}><ContactMe /></section>
               <Footer />
             </div>
             {/* <Router>

@@ -29,7 +29,7 @@ class Projects extends Component {
     })
     return(
       <div className="main_div">
-        <div className="content_large">
+        {/* <div className="content_large"> */}
         <div className="project_header">
         <h3>Projects</h3>
       </div>
@@ -41,7 +41,7 @@ class Projects extends Component {
             </tbody>
       </table>
     </div>
-    </div>
+    // </div>
     )
   }
   render(){

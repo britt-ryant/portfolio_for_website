@@ -5,15 +5,15 @@ INSERT INTO project_info (name, tech, picture) VALUES (
   'Node/Express',
   'projectOne'
 ),(
-  'Waiter <br>App',
+  'Waiter Application',
   'Ruby/Ruby on Rails',
   'http://writingexercises.co.uk/images2/randomimage/plane.jpg'
 ),(
-  'Beat Box',
+  'Beat Box Playlist',
   'React/Node/Express',
   'http://writingexercises.co.uk/images2/randomimage/plane.jpg'
 ),(
-  'P Four',
+  'Connection Dating App',
   'React Native/Ruby on Rails',
   'http://writingexercises.co.uk/images2/randomimage/plane.jpg'
 )

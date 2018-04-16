@@ -24,7 +24,7 @@ li {
   margin: 5vh auto;
   position: relative;
   transition: 0.3s;
-  left: -7vw;
+  left: -120px;
 }
 li:Hover{
   left: 0;
@@ -38,7 +38,7 @@ nav{
   margin: auto;
   position: fixed;
   display: inline-block;
-  min-width: 250px;
+  min-width: 100px;
 
 }
 .content{
@@ -55,7 +55,8 @@ button{
   background-color: white;
   border-radius: 10px;
   opacity: .2;
-  width: 9.5vw;
+  /* width: 9.5vw; */
+  width: 150px;
   height: 6vh;
   font-size: 30px;
   text-align: left;
@@ -80,7 +81,8 @@ button:focus{
   /* top: -20vh; */
   /* border: 2px solid white; */
   height: 20vh;
-  width: 70vw;
+  width: 900px;
+  min-width: 900px;
   margin: 20vh auto;
 }
 
@@ -89,7 +91,7 @@ button:focus{
   width: 20vw;
   height: 30vh;
   margin: auto 5vw;
-  padding: 0 5px 0 5px;
+  padding: 0 50px 0 5px;
 }
 .project h2{
   font-size: 40px;
@@ -98,10 +100,15 @@ button:focus{
 /* border: 2px solid white; */
 width: 61vw;
 font-size: 60px;
+margin: 50px auto;
+}
+.projects_content{
+  /* border: 2px solid white; */
 }
 
 .row{
   align: center;
+  /* border: 2px solid white; */
 }
 .header{
   position: relative;
@@ -115,6 +122,10 @@ font-size: 60px;
 .pwd{
   /* border: 2px solid white; */
   color: #b29600;
+}
+table{
+  /* border: 2px solid white; */
+  margin: 0 auto;
 }
 .terminal{
   font-size: 30px;
@@ -146,38 +157,7 @@ font-size: 60px;
 .help p{
   font-size: 20px;
 }
-/* .home {
-  position: relative;
-  top: 10vh;
-  border: 2px solid black;
-  margin: 0 auto;
-  left: 0;
 
-}
-.about {
-  position: relative;
-  top: 20vh;
-  border: 2px solid black;
-  margin: 0 auto;
-  left: 0;
-
-}
-.projects {
-  position: relative;
-  top: 30vh;
-  border: 2px solid black;
-  margin: 0 auto;
-  left: 0;
-
-}
-.contact {
-  position: relative;
-  top: 40vh;
-  border: 2px solid black;
-  margin: 0 auto;
-  left: 0;
-
-} */
 .footer {
   /* border: 2px dashed white; */
   position: fixed;
@@ -212,8 +192,20 @@ p {
 .about_me, p{
   font-size: 20px;
 }
+.about_title{
+  /* border: 2px solid white; */
+  margin: 10px auto;
+}
 .about_pic{
-  height: 30vh;
+  top: -50px;
+  height: 300px;
+  /* border: 2px solid white; */
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+}
+.about_me{
+  min-width: 1px;
 }
 
 /* .landing_page {
@@ -254,6 +246,7 @@ img{
   /* border: 2px solid white; */
   width: 100vw;
   height: 50vh;
+  min-width: 1600px;
   background-color: rgba(255, 255, 255, .3)
 }
 .big-logo{

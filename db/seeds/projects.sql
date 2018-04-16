@@ -1,4 +1,4 @@
-\c portfolio_projects
+-- \c portfolio_projects
 
 INSERT INTO project_info (name, tech, picture) VALUES (
   'Catch Tracker',

@@ -1,4 +1,4 @@
-\c portfolio_projects
+-- \c portfolio_projects
 
 DROP TABLE IF EXISTS project_info;
 

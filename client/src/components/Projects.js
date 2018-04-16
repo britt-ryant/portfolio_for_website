@@ -13,7 +13,7 @@ class Projects extends Component {
   }
   componentDidMount(){
     console.log(`rendering data for projects`);
-    axios.get('/api/projects')
+    axios.get('/api/projects') // localhost:3000
     .then(result => {
       this.setState({
         apiDataReceived: true,

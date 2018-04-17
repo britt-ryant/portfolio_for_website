@@ -88,10 +88,11 @@ button:focus{
 
 .project{
   /* border: 2px solid white; */
-  width: 20vw;
+  width: 100px;
   height: 30vh;
   margin: auto 5vw;
-  padding: 0 50px 0 5px;
+  padding: 0 50px 0 50px;
+
 }
 .project h2{
   font-size: 40px;
@@ -142,7 +143,7 @@ table{
   /* border: 2px solid white; */
   right: 2vw;
   top: 2vh;
-  width: 17vw;
+  width: 300px;
   color: #4b4b4b;
 }
 .error{
@@ -156,6 +157,8 @@ table{
 }
 .help p{
   font-size: 20px;
+  min-width: 500px;
+
 }
 
 .footer {
@@ -171,9 +174,18 @@ table{
   z-index: 3;
 }
 .footer a {
-  padding: 20px;
-}
+  padding: 40px;
+  /* border: 2px solid white; */
 
+
+}
+.container_for_tags{
+  /* border: 2px solid white; */
+  /* padding: 0 0 0 20px; */
+  /* position: fixed; */
+  width: 1000px;
+  margin: 0 0 0 350px;
+}
 
 h1 {
   font-size: 150px
@@ -185,24 +197,32 @@ p {
   /* width: 9.5vw; */
   font-size: ;
 }
-
+.ryan_info{
+  /* border: 2px solid white; */
+  justify-content: left;
+}
 .about_me, h2{
   font-size: 70px;
 }
 .about_me, p{
   font-size: 20px;
+  text-align: left;
+
 }
 .about_title{
   /* border: 2px solid white; */
   margin: 10px auto;
+  text-align: left;
 }
 .about_pic{
-  top: -50px;
-  height: 300px;
+  /* top: -10px; */
+  height: 500px;
   /* border: 2px solid white; */
   margin: 0 auto;
+  padding: 0 20px 0 0 ;
   border-radius: 10px;
   position: relative;
+  float: left;
 }
 .about_me{
   min-width: 1px;
@@ -229,7 +249,7 @@ img{
 } */
 
 .App{
-  border: 2px solid white;
+  /* border: 2px solid white; */
   min-width: 1600px;
 }
 

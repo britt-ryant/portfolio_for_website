@@ -3,6 +3,7 @@ import projectOne from '../images/Catch-tracker.png';
 import projectTwo from '../images/Waiter-App.png';
 import beatBox from '../images/Beat-box.png'
 import dummyPic from '../images/test.jpg';
+import connection from '../images/project-4.png';
 
 
 class OneProject extends Component {
@@ -27,7 +28,11 @@ class OneProject extends Component {
       this.setState({
         picture: beatBox
       })
-    }else {
+    } else if(this.state.id === 4){
+      this.setState({
+        picture: connection
+      })
+    } else {
       this.setState({
         picture: dummyPic
       })

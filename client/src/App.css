@@ -216,6 +216,7 @@ p {
 }
 .about_pic{
   /* top: -10px; */
+  z-index: -2;
   height: 500px;
   /* border: 2px solid white; */
   margin: 0 auto;
@@ -226,6 +227,10 @@ p {
 }
 .about_me{
   min-width: 1px;
+}
+
+.landing_page_text, p{
+  text-align: center;
 }
 
 /* .landing_page {

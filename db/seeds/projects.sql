@@ -14,6 +14,6 @@ INSERT INTO project_info (name, tech, picture) VALUES (
   'http://writingexercises.co.uk/images2/randomimage/plane.jpg'
 ),(
   'Connection Dating App',
-  'React Native/Ruby on Rails',
+  'React Native/Node/Express',
   'http://writingexercises.co.uk/images2/randomimage/plane.jpg'
 )

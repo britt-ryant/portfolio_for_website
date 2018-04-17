@@ -22,7 +22,7 @@ class Header extends Component {
         <nav className='main navbar'>
           <h1>I am the header</h1>
           <button className="LandingPage" value="LandingPage" onClick={this.handleClick}>Home</button>
-          <button className="ContactMe" onClick={() => scrollToComponent(this.ContactMe)}>Contact</button>
+          <button className="ContactMe" onClick={() => scrollToComponent(this.ContactMe)}>Tech</button>
                   <button className="Projects" onClick={() => this.handleClick(this.Projects)}>Projects</button>
           <button className="AboutMe" onClick={this.handleClick}>About</button>
           {/* <Link to="/">Home</Link>

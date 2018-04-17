@@ -98,8 +98,8 @@ class App extends Component {
             <ul>
               <li><button className='home side-button' onClick={() => this.scrollFunction("LandingPage")} value="Home" >home</button></li>
               <li><button className='about side-button' onClick={() => this.scrollFunction("AboutMe")} value="About" >about</button></li>
+              <li><button className="contact side-button" onClick={() => this.scrollFunction("Technologies")} value="Contact Me" >Tech</button></li>
               <li><button className="projects side-button" onClick={() => this.scrollFunction("Projects")} value="Projects" >projects</button></li>
-              <li><button className="contact side-button" onClick={() => this.scrollFunction("Technologies")} value="Contact Me" >contact</button></li>
             </ul>
           </nav>
           <div>

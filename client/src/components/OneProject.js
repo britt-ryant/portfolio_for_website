@@ -4,6 +4,7 @@ import projectTwo from '../images/Waiter-App.png';
 import beatBox from '../images/Beat-box.png'
 import dummyPic from '../images/test.jpg';
 import connection from '../images/project-4.png';
+import gitIcon from '../images/project_github.png';
 
 
 class OneProject extends Component {
@@ -39,14 +40,18 @@ class OneProject extends Component {
       })
     }
   }
+  handleGitClick(){
+    console.log(this.state.projectData);
+    window.location.assign(this.state.projectData.link)
+  }
   render(){
     return(
       <td className="project">
-          <h2>{this.state.projectData.name}</h2>
-          <img src={this.state.picture} alt="project-screenshot" />
+          <h3>{this.state.projectData.name}</h3>
+          <img className="project_image" src={this.state.picture} alt="project-screenshot" />
           <p className="project_text">{this.state.projectData.tech}</p>
-          <button onClick={()=> this.setState({about: true})} className="project_link">about</button>
-          <button onClick={()=> console.log(`Hello!!!`)} className="project_link">github</button>
+          {/* <button onClick={()=> this.setState({about: true})} className="project_link">about</button> */}
+          <button onClick={()=> this.handleGitClick()} className="project_link"><img className="git_logo" src={gitIcon} /></button>
 
           {/* <a href="www.google.com" className="project_link">github</a> */}
       </td>

@@ -1,6 +1,6 @@
 -- \c portfolio_projects
 
-INSERT INTO project_info (name, tech, picture) VALUES (
+INSERT INTO project_info (name, tech, link, about) VALUES (
   'Catch Tracker',
   'Node/Express',
   'https://github.com/britt-ryant/UNIT_02_PROJECT_02',
@@ -18,5 +18,6 @@ INSERT INTO project_info (name, tech, picture) VALUES (
 ),(
   'Connection Dating App',
   'React Native/Node/Express',
-  'https://github.com/britt-ryant/PROJECT_04'
-)
+  'https://github.com/britt-ryant/PROJECT_04',
+  'None right now'
+);

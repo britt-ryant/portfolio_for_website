@@ -8,8 +8,10 @@ body{
   background-color: #1c1c1c;
   z-index: -1;
   font-family: 'IBM Plex Mono', monospace;
-  min-width: 1600px;
-
+  /* min-width: 1600px; */
+}
+h2{
+  font-size: 3em;
 }
 
 ul {
@@ -24,7 +26,7 @@ li {
   margin: 5vh auto;
   position: relative;
   transition: 0.3s;
-  left: -120px;
+  left: -7vw;
 }
 li:Hover{
   left: 0;
@@ -38,9 +40,12 @@ nav{
   margin: auto;
   position: fixed;
   display: inline-block;
-  min-width: 100px;
+  /* min-width: 100px; */
 
 }
+/* p{
+  font-size: .8em;
+} */
 .content{
   /* border: 2px solid white; */
   width: 60vw;
@@ -48,12 +53,12 @@ nav{
 
 }
 .max{
-  max-width: 1500px;
+  /* max-width: 1500px; */
   margin: 20vh auto;
 }
-button{
+.side-button{
   background-color: white;
-  border-radius: 10px;
+  border-radius: .2em;
   opacity: .2;
   /* width: 9.5vw; */
   width: 150px;
@@ -61,15 +66,13 @@ button{
   font-size: 30px;
   text-align: left;
 }
-button:focus{
+.side-button:focus{
   border: none;
   outline: none;
 }
 .input_box{
   position: fixed;
-  z-index: 1;
-  /* border: 2px solid white; */
-  /* background-color: inherit; */
+  z-index: -5;
   opacity: 0;
   top: 0;
   width: 100vw;
@@ -82,19 +85,21 @@ button:focus{
   /* border: 2px solid white; */
   height: 20vh;
   width: 900px;
-  min-width: 900px;
+  /* min-width: 900px; */
   margin: 20vh auto;
+}
+.content_projects{
+  z-index: 3;
 }
 
 .project{
-  /* border: 2px solid white; */
+  border: 2px solid white;
   width: 100px;
-  height: 30vh;
+  /* height: 30vh; */
   margin: auto 5vw;
   padding: 0 50px 0 50px;
-
 }
-.project h2{
+.project{
   font-size: 40px;
 }
 .project_header{
@@ -107,13 +112,10 @@ margin: 50px auto;
   /* border: 2px solid white; */
 }
 
-.row{
-  align: center;
-  /* border: 2px solid white; */
-}
+
 .header{
   position: relative;
-  top: 10vh;
+  /* top: 10vh; */
   width: 70vw;
   margin: auto;
   /* border: 2px solid white; */
@@ -127,23 +129,52 @@ margin: 50px auto;
 table{
   /* border: 2px solid white; */
   margin: 0 auto;
+  /* z-index: 999; */
+}
+ a{
+  position: relative;
+  z-index: 5;
+  border: 2px solid white;
+  text-align: left;
+  padding: 0 30px;
+  text-decoration: none;
+  color: inherit;
+}
+.project_link{
+  position: relative;
+  z-index: 5;
+  /* text-align: left; */
+  padding: 0 20px;
+  font-size: 20px;
+  margin: 0 10px;
+  border: 2px solid white;
+  background-color:rgba(255, 255, 255, .2);
 }
 .terminal{
-  font-size: 30px;
-  /* border: 2px solid white; */
+  font-size: calc(.7vw + .7vh + .5vmin);
+  border: 2px solid white;
   text-align: left;
   position: fixed;
-  padding: 0 10px 0 1vw;
-  min-width: 700px;
+  /* padding: 0 10px 0 1vw; */
+  /* min-width: 700px; */
+}
+.terminal_command_line{
+  font-size: calc(.7vw + .7vh + .5vmin);
+  border: 2px solid white;
+  /* margin: 5vh auto; */
+  text-align: left;
+  position: fixed;
 }
 
 .help_menu_nav {
-  font-size: 22px;
+  font-size: 2em;
+  font-size: calc(.6vw + .6vh + .4vmin);
   position: fixed;
-  /* border: 2px solid white; */
+  border: 2px solid white;
   right: 2vw;
   top: 2vh;
-  width: 300px;
+  width: 20vw;
+  /* height: 20vh; */
   color: #4b4b4b;
 }
 .error{
@@ -155,9 +186,9 @@ table{
 .dark{
   color: #4b4b4b
 }
-.help p{
-  font-size: 20px;
-  min-width: 500px;
+.help{
+  /* font-size: 20px; */
+  /* min-width: 500px; */
 
 }
 
@@ -174,62 +205,63 @@ table{
   z-index: 3;
 }
 .footer a {
-  padding: 40px;
+  /* padding: 40px; */
   /* border: 2px solid white; */
 
 
 }
-.container_for_tags{
-  /* border: 2px solid white; */
-  /* padding: 0 0 0 20px; */
-  /* position: fixed; */
-  width: 1000px;
-  margin: 0 0 0 350px;
+.landing_page_header{
+    font-size: calc(4vw + 4vh + 3vmin);
 }
 
-h1 {
-  font-size: 150px
+.landing_page_text{
+    font-size: calc(.7vw + .7vh + .3vmin);
 }
-p {
-  font-size: 30px;
-}
-.side-button{
-  /* width: 9.5vw; */
-  font-size: ;
+
+.about_container{
+  /* border: 2px solid white; */
+  height: 70vh;
+  width: 70vw;
+  margin: 15vh auto;
 }
 .ryan_info{
-  /* border: 2px solid white; */
-  justify-content: left;
-}
-.about_me, h2{
-  font-size: 70px;
-}
-.about_me, p{
-  font-size: 20px;
+  width: 60vw;
+  font-size: calc(.7vw + .7vh + .3vmin);
   text-align: left;
-
 }
 .about_title{
   /* border: 2px solid white; */
-  margin: 10px auto;
+  margin: 1vh auto;
   text-align: left;
 }
+@media screen and (max-width: 450px){
+  .about_pic{
+    max-height: 30vh;
+  }
+  .landing_page_header{
+    font-size: 10vw;
+  }
+}
 .about_pic{
-  /* top: -10px; */
   z-index: -2;
-  height: 500px;
-  /* border: 2px solid white; */
+  height: 50vh;
   margin: 0 auto;
-  padding: 0 20px 0 0 ;
-  border-radius: 10px;
+  padding: 0 1vw 0 0 ;
   position: relative;
   float: left;
 }
 .about_me{
-  min-width: 1px;
+  /* border: 2px solid white; */
+  text-align: left;
 }
 
-.landing_page_text, p{
+.landing_page_text{
+  text-align: center;
+  /* min-width: 1000px; */
+}
+
+.project_text{
+  /* border: 2px solid white; */
   text-align: center;
 }
 
@@ -242,10 +274,17 @@ img{
   height: 15vh;
 }
 .main_div{
+  /* justify-content: center; */
+  /* padding: 10em; */
   text-align: center;
   border: 2px solid #1c1c1c;
   height: 100vh;
-  min-width: 1600px;
+  /* position: relative; */
+  /* min-width: 1600px; */
+  border: 2px solid white;
+  resize: both;
+  /* min-height: 580px; */
+  /* overflow: auto; */
 }
 /* nav{
   justify-content: center;
@@ -255,7 +294,7 @@ img{
 
 .App{
   /* border: 2px solid white; */
-  min-width: 1600px;
+  /* min-width: 1600px; */
 }
 
 .logo{
@@ -267,18 +306,38 @@ img{
 }
 .technologies{
   margin: 25vh auto;
-  padding: 20px;
+  /* padding: 2vh 2vw; */
   /* border: 2px solid white; */
+  /* display: flex;
+  flex-wrap: wrap; */
   width: 100vw;
-  height: 50vh;
-  min-width: 1600px;
-  background-color: rgba(255, 255, 255, .3)
+  /* height: 60vh; */
+  /* min-width: 1600px; */
+  background-color: rgba(255, 255, 255, .3);
+
 }
-.big-logo{
-  height: 150px;
-  padding: 50px;
+.image{
+  /* border: 2px solid white; */
+  width: 10vw;
+  height: auto;
 }
- .special{
-  height: 200px;
-  padding: 0 50px 20px 50px;
+.image_long{
+  /* border: 2px solid white; */
+  width: 20vw;
+  height: auto;
+}
+.image_medium{
+  width: 14vw;
+  height: auto;
+}
+.htmllogo{
+  /* border: 2px solid white; */
+  width: 18vw;
+  height: auto;
+}
+.logo_td{
+  /* border: 2px solid white; */
+}
+.logo_td_rails{
+  width: 22vw;
 }

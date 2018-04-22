@@ -155,15 +155,10 @@ class TerminalCommandLineTwo extends Component {
         <div className='pwd'>
           <p className='terminal'> ~ {this.state.pwdCode}{this.state.pwdPortfolio}{this.state.pwdRyanBritt}<span className="branch">{this.state.pwdBranch}</span></p>
           <div className="help_menu_nav">click anywhere on the page and type help in command line to toggle the help menu</div>
-          <br></br>
-          <br></br>
-          <br></br>
-          <p className='terminal'> {this.state.currentTime} $ {this.state.currentCommand}</p>
+           <br></br>
+           <br></br>
+          <p className='terminal_command_line'> {this.state.currentTime} $ {this.state.currentCommand}</p>
           {this.state.error ? <TerminalCommandLine currentCommand={this.state.errorWord} /> : ''}
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
           <form onSubmit={this.handleSubmit} ref="form">
             <input className="input_box" type='text' onChange={this.handleChange} />
           </form>

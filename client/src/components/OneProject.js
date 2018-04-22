@@ -12,7 +12,8 @@ class OneProject extends Component {
     this.state = {
       picture: null,
       id: this.props.projectData.id,
-      projectData: this.props.projectData
+      projectData: this.props.projectData,
+      about: false,
     }
   }
   componentDidMount(){
@@ -41,9 +42,13 @@ class OneProject extends Component {
   render(){
     return(
       <td className="project">
-        <h2>{this.state.projectData.name}</h2>
-        <img src={this.state.picture} alt="project-screenshot" />
-        <p>{this.state.projectData.tech}</p>
+          <h2>{this.state.projectData.name}</h2>
+          <img src={this.state.picture} alt="project-screenshot" />
+          <p className="project_text">{this.state.projectData.tech}</p>
+          <button onClick={()=> this.setState({about: true})} className="project_link">about</button>
+          <button onClick={()=> console.log(`Hello!!!`)} className="project_link">github</button>
+
+          {/* <a href="www.google.com" className="project_link">github</a> */}
       </td>
     )
   }

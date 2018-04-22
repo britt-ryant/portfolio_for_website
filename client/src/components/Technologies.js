@@ -19,19 +19,27 @@ class Technologies extends Component {
   render(){
     return(
       <div className="main_div">
-        <div className="technologies">
-          <img className="big-logo" src={postgresql} alt="postgreSQL" />
-          <img className="big-logo" src={python} alt="Python" />
-          <img className="big-logo" src={ruby} alt="Ruby" />
-          <img className="big-logo" src={rails} alt="Ruby on Reails" />
-          <img className="big-logo" src={php} alt="PHP" />
-          <img className="big-logo special" src={node} alt="NodeJs" />
-          <img className="big-logo special" src={javascript} alt="JavaScript" />
-          <img className="big-logo special" src={html} alt="HTML CSS" />
-          <img className="big-logo" src={laravel} alt="Laravel" />
-          <img className="big-logo special" src={react} alt="React js" />
+
+        <table className="technologies">
+        <tbody>
+          <tr className="top_row">
+            <td className="logo_td"><img className="image" src={postgresql} alt="postgreSQL" /></td>
+            <td className="logo_td"><img className="image" src={python} alt="Python" /></td>
+            <td className="logo_td"><img className="image" src={ruby} alt="Ruby" /></td>
+            <td className="logo_td_rails"><img className="image_long" src={rails} alt="Ruby on Rails" /></td>
+            <td className="logo_td"><img className="image_medium" src={php} alt="PHP" /></td>
+          </tr>
+          <tr className="bottom_row">
+            <td className="logo_td"><img className="image" src={node} alt="NodeJs" /></td>
+            <td className="logo_td"><img className="image" src={javascript} alt="JavaScript" /></td>
+            <td className="logo_td"><img className="image" src={laravel} alt="Laravel" /></td>
+            <td className="logo_td"><img className="htmllogo" src={html} alt="HTML CSS" /></td>
+            <td className="logo_td_rails"><img className="image_long" src={react} alt="React js" /></td>
+            {/* <td className="logo_td"><img className="image" src={native} alt="React native js" /></td> */}
+          </tr>
           {/* <img className="big-logo" src={native} alt="React Native" /> */}
-        </div>
+        </tbody>
+        </table>
       </div>
     )
   }

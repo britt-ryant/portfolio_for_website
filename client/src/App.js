@@ -95,12 +95,12 @@ class App extends Component {
       return (
         <div className="App">
           <nav>
-            <ul>
-              <li><button className='home side-button' onClick={() => this.scrollFunction("LandingPage")} value="Home" >home</button></li>
-              <li><button className='about side-button' onClick={() => this.scrollFunction("AboutMe")} value="About" >about</button></li>
-              <li><button className="contact side-button" onClick={() => this.scrollFunction("Technologies")} value="Contact Me" >tech</button></li>
-              <li><button className="projects side-button" onClick={() => this.scrollFunction("Projects")} value="Projects" >projects</button></li>
-            </ul>
+            {/* <ul>
+              <li><button className='side-button' onClick={() => this.scrollFunction("LandingPage")} value="Home" >home</button></li>
+              <li><button className='side-button' onClick={() => this.scrollFunction("AboutMe")} value="About" >about</button></li>
+              <li><button className="side-button" onClick={() => this.scrollFunction("Technologies")} value="Contact Me" >tech</button></li>
+              <li><button className="side-button" onClick={() => this.scrollFunction("Projects")} value="Projects" >projects</button></li>
+            </ul> */}
           </nav>
           <div>
             <TerminalCommandLineTwo scrollTo={this.scrollFunction} terminalNavbar={this.state.terminalNavbar} gitHubClick={this.gitHubClick}

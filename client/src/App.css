@@ -91,8 +91,11 @@ nav{
   /* min-width: 900px; */
   margin: 20vh auto;
 }
-.content_projects{
+.content_project{
   /* z-index: 3; */
+  overflow: scroll;
+  position: relative;
+  /* border: 2px solid white; */
 }
 
 .project{
@@ -109,10 +112,6 @@ nav{
 /* width: 20vw; */
 /* font-size: 60px; */
 margin: 15vh auto 3vh auto;
-}
-.projects_content{
-  /* border: 2px solid white; */
-  /* overflow: scroll; */
 }
 .project_image{
   width: 12vw;
@@ -322,9 +321,11 @@ table{
   .project_image{
     width: 40vw;
   }
-  .projects_content{
-    overflow: scroll;
-  }
+  /* .content_projects{
+    overflow-y: scroll;
+    position: relative;
+    border: 2px solid white;
+  } */
   /* .logo_td{
     display: block;
     border: 1px solid white;
@@ -358,7 +359,9 @@ table{
 
 .project_text{
   /* border: 2px solid white; */
+  font-size: calc(.7vw + .7vh + .3vmin);
   text-align: center;
+
 }
 
 /* .landing_page {

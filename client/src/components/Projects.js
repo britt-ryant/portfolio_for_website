@@ -33,7 +33,7 @@ class Projects extends Component {
         <div className="project_header">
         <h2>Projects</h2>
       </div>
-      <table className="content_projects">
+      <table className="content_project">
         <tbody>
             <tr className="row">
                 {allProjects}

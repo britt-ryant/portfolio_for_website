@@ -14,6 +14,7 @@ class TerminalHelp extends Component {
           <p>cd home = back to landing page</p>
           <p>cd  = root dir</p>
           <p>git push origin master = ryan britt's github profile</p>
+          <p>git checkout /* PROJECT NAME */ = ryan britt's github repo for that project</p>
           <p>*****************</p>
           <p>type help to toggle the help menu</p>
         </div>

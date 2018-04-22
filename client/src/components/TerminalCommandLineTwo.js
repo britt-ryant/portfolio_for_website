@@ -128,6 +128,22 @@ class TerminalCommandLineTwo extends Component {
       this.setState({
         currentCommand: ''
       }, () => this.props.deleteWebPage())
+    } else if (this.state.currentCommand === "git checkout catch tracker" && this.state.backupCount == 0) {
+      this.setState({
+        currentCommand: ''
+      }, () => window.location.assign('https://github.com/britt-ryant/UNIT_02_PROJECT_02'))
+    } else if (this.state.currentCommand === "git checkout waiter application" && this.state.backupCount == 0) {
+      this.setState({
+        currentCommand: ''
+      }, () => window.location.assign('https://github.com/britt-ryant/Waiter-App'))
+    } else if (this.state.currentCommand === "git checkout beat box playlist" && this.state.backupCount == 0) {
+      this.setState({
+        currentCommand: ''
+      }, () => window.location.assign('https://github.com/RevenantEverest/WDI_PROJECT_THREE'))
+    } else if (this.state.currentCommand === "git checkout connection dating app" && this.state.backupCount == 0) {
+      this.setState({
+        currentCommand: ''
+      }, () => window.location.assign('https://github.com/britt-ryant/PROJECT_04'))
     } else {
       console.log(`ERROR`, this.state.errorWord);
       this.setState({

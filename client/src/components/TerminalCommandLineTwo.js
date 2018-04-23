@@ -131,23 +131,23 @@ class TerminalCommandLineTwo extends Component {
     } else if (this.state.currentCommand === "git checkout catch tracker" && this.state.backupCount == 0) {
       this.setState({
         currentCommand: ''
-      }, () => window.open('https://github.com/britt-ryant/UNIT_02_PROJECT_02', '_blank'))
+      }, () => window.open('https://github.com/britt-ryant/UNIT_02_PROJECT_02'))
     } else if (this.state.currentCommand === "git checkout waiter application" && this.state.backupCount == 0) {
       this.setState({
         currentCommand: ''
-      }, () => window.open('https://github.com/britt-ryant/Waiter-App', '_blank'))
+      }, () => window.open('https://github.com/britt-ryant/Waiter-App'))
     } else if (this.state.currentCommand === "git checkout beat box playlist" && this.state.backupCount == 0) {
       this.setState({
         currentCommand: ''
-      }, () => window.open('https://github.com/RevenantEverest/WDI_PROJECT_THREE', '_blank'))
+      }, () => window.open('https://github.com/RevenantEverest/WDI_PROJECT_THREE'))
     } else if (this.state.currentCommand === "git checkout connection dating app" && this.state.backupCount == 0) {
       this.setState({
         currentCommand: ''
-      }, () => window.open('https://github.com/britt-ryant/PROJECT_04', '_blank'))
+      }, () => window.open('https://github.com/britt-ryant/PROJECT_04'))
     } else if (this.state.currentCommand === "git checkout portfolio" && this.state.backupCount == 0) {
         this.setState({
           currentCommand: ''
-        }, () => window.open('https://github.com/britt-ryant/portfolio_for_website', '_blank'))
+        }, () => window.open('https://github.com/britt-ryant/portfolio_for_website'))
       } else {
       console.log(`ERROR`, this.state.errorWord);
       this.setState({

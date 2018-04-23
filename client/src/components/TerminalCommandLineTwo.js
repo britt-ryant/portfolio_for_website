@@ -144,7 +144,11 @@ class TerminalCommandLineTwo extends Component {
       this.setState({
         currentCommand: ''
       }, () => window.open('https://github.com/britt-ryant/PROJECT_04', '_blank'))
-    } else {
+    } else if (this.state.currentCommand === "git checkout portfolio" && this.state.backupCount == 0) {
+        this.setState({
+          currentCommand: ''
+        }, () => window.open('https://github.com/britt-ryant/portfolio_for_website', '_blank'))
+      } else {
       console.log(`ERROR`, this.state.errorWord);
       this.setState({
         error: true,

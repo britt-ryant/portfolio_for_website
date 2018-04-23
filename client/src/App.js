@@ -76,7 +76,7 @@ class App extends Component {
     this.setState({
       fireRedirect: true
     })
-    window.location.assign('https://github.com/britt-ryant')
+    window.open('https://github.com/britt-ryant', '_blank')
   }
   renderTerminalHelp(){
     this.setState({

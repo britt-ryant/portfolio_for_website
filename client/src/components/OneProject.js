@@ -5,6 +5,7 @@ import beatBox from '../images/Beat-box.png'
 import dummyPic from '../images/test.jpg';
 import connection from '../images/project-4.png';
 import gitIcon from '../images/project_github.png';
+import liveIcon from '../images/live_icon.png';
 
 
 class OneProject extends Component {
@@ -42,7 +43,11 @@ class OneProject extends Component {
   }
   handleGitClick(){
     console.log(this.state.projectData);
-    window.location.assign(this.state.projectData.link)
+    window.open(this.state.projectData.link, '_blank');
+  }
+  handleLiveClick(){
+    console.log(this.state.projectData.live);
+    window.open(this.state.projectData.live, '_blank');
   }
   render(){
     return(
@@ -50,7 +55,7 @@ class OneProject extends Component {
           <h3>{this.state.projectData.name}</h3>
           <img className="project_image" src={this.state.picture} alt="project-screenshot" />
           <p className="project_text">{this.state.projectData.tech}</p>
-          {/* <button onClick={()=> this.setState({about: true})} className="project_link">about</button> */}
+          {this.state.id !== 4 ? <button onClick={()=> this.handleLiveClick()} className="project_link"><img className="git_logo" src={liveIcon} /></button> : ''}
           <button onClick={()=> this.handleGitClick()} className="project_link"><img className="git_logo" src={gitIcon} /></button>
 
           {/* <a href="www.google.com" className="project_link">github</a> */}

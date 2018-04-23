@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.65b34e58.css",
   "main.css.map": "static/css/main.65b34e58.css.map",
-  "main.js": "static/js/main.0db8fb96.js",
-  "main.js.map": "static/js/main.0db8fb96.js.map",
+  "main.js": "static/js/main.b417eaa9.js",
+  "main.js.map": "static/js/main.b417eaa9.js.map",
   "static/media/Beat-box.png": "static/media/Beat-box.15501725.png",
   "static/media/Catch-tracker.png": "static/media/Catch-tracker.52115871.png",
   "static/media/Ryan.jpg": "static/media/Ryan.997f672b.jpg",
@@ -12,6 +12,7 @@
   "static/media/htmllogo.png": "static/media/htmllogo.8ec90809.png",
   "static/media/laravellogo.png": "static/media/laravellogo.a441c824.png",
   "static/media/linkedinlogo.png": "static/media/linkedinlogo.a08f59f4.png",
+  "static/media/live_icon.png": "static/media/live_icon.f7f36ba0.png",
   "static/media/nodelogo.png": "static/media/nodelogo.9100f2eb.png",
   "static/media/phplogo.png": "static/media/phplogo.b30b8904.png",
   "static/media/postgreslogo.png": "static/media/postgreslogo.d116e5c6.png",

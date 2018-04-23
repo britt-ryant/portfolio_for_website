@@ -5,7 +5,7 @@ INSERT INTO project_info (name, tech, link, about, live) VALUES (
   'Node/Express',
   'https://github.com/britt-ryant/UNIT_02_PROJECT_02',
   'Catch Tracker uses Node/Express/ejs to create an interface that allows a user to store each fish they catught based on size and location.  This app also makes a call from an external api to retrieve weather information for each location.',
-  'https://catch-tracker.herokuapp.com/'
+  'https://catch-tracker.herokuapp.com'
 ),(
   'Waiter Application',
   'Ruby/Ruby on Rails',
@@ -17,7 +17,7 @@ INSERT INTO project_info (name, tech, link, about, live) VALUES (
   'React/Node/Express',
   'https://github.com/britt-ryant/WDI_PROJECT_THREE',
   'Beat box was a group project.  Myself and three other people created a ',
-  'https://beat-box-project-3.herokuapp.com/'
+  'https://beat-box-project-3.herokuapp.com'
 ),(
   'Connection Dating App',
   'React Native/Node/Express',

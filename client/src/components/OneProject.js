@@ -43,11 +43,11 @@ class OneProject extends Component {
   }
   handleGitClick(){
     console.log(this.state.projectData);
-    window.open(this.state.projectData.link);
+    window.open(this.state.projectData.link)
   }
   handleLiveClick(){
     console.log(this.state.projectData.live);
-    window.open(this.state.projectData.live);
+    window.location.assign(this.state.projectData.live);
   }
   render(){
     return(

@@ -179,6 +179,7 @@ table{
   text-align: left;
   position: fixed;
   padding: 0 10px 0 1vw;
+  z-index: 5;
   /* min-width: 700px; */
 }
 .terminal_command_line{
@@ -188,6 +189,7 @@ table{
   /* margin: 5vh auto; */
   text-align: left;
   position: fixed;
+  z-index: 5;
 }
 
 .help_menu_nav {
@@ -198,6 +200,7 @@ table{
   right: 2vw;
   top: 2vh;
   width: 20vw;
+  z-index: 5;
   /* height: 20vh; */
   color: #4b4b4b;
 }
@@ -307,6 +310,17 @@ table{
   .landing_page_header{
     font-size: 10vw;
   }
+  /* .technologies{
+    display: block;
+  }
+  .logo_td{
+    /* width: 50vw; */
+    /* border: 2px solid white; */
+  /* }
+  .image{
+    min-width: 40vw;
+    border: 2px solid white;
+  } */
 }
 @media screen and (max-height: 445px) and (min-width: 1300px){
   .logo_td{
@@ -414,7 +428,7 @@ img{
   flex-wrap: wrap; */
   width: 100vw;
   height: auto;
-  z-index: 5;
+  z-index: 3;
   /* height: 60vh; */
   /* min-width: 1600px; */
   background-color: rgba(255, 255, 255, .3);

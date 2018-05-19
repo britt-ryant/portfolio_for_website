@@ -88,7 +88,7 @@ class App extends Component {
       delete: !this.state.delete
     })
     setTimeout(() => {
-      window.location.reload()}, 5000)
+      window.location.reload()}, 10000)
   }
   render() {
     if(!this.state.delete){

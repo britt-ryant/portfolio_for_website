@@ -10,6 +10,9 @@ import html from '../images/htmllogo.png';
 import laravel from '../images/laravellogo.png';
 import react from '../images/reactlogo.png';
 import native from '../images/reactnativelogo.png';
+import java from '../images/Java_logo.png';
+import reactNative from '../images/react_native.png';
+import mySQL from '../images/MySQL_logo.png';
 
 
 
@@ -35,8 +38,15 @@ class Technologies extends Component {
             <td className="logo_td"><img className="image" src={laravel} alt="Laravel" /></td>
             <td className="logo_td"><img className="htmllogo" src={html} alt="HTML CSS" /></td>
             <td className="logo_td_rails"><img className="image_long" src={react} alt="React js" /></td>
+
             {/* <td className="logo_td"><img className="image" src={native} alt="React native js" /></td> */}
           </tr>
+            <tr className="third-row">
+              <td className="logo_td"></td>
+              <td className="logo_td"><img className="image_medium" src={mySQL} alt="mySQL" /></td>
+              <td className="logo_td"><img className="image_medium" src={java} alt="java" /></td>
+              <td className="logo_td_bigger"><img className="htmllogo" src={reactNative} alt="react native" /></td>
+            </tr>
           {/* <img className="big-logo" src={native} alt="React Native" /> */}
         </tbody>
         </table>
